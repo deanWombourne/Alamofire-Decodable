@@ -1,6 +1,6 @@
 # Alamofire-Decodable
 
-[![CI Status](http://img.shields.io/travis/Sam Dean/Alamofire-Decodable.svg?style=flat)](https://travis-ci.org/Sam Dean/Alamofire-Decodable)
+[![CI Status](http://img.shields.io/travis/deanWombourne/Alamofire-Decodable.svg?style=flat)](https://travis-ci.org/deanWombourne/Alamofire-Decodable)
 [![Version](https://img.shields.io/cocoapods/v/Alamofire-Decodable.svg?style=flat)](http://cocoapods.org/pods/Alamofire-Decodable)
 [![License](https://img.shields.io/cocoapods/l/Alamofire-Decodable.svg?style=flat)](http://cocoapods.org/pods/Alamofire-Decodable)
 [![Platform](https://img.shields.io/cocoapods/p/Alamofire-Decodable.svg?style=flat)](http://cocoapods.org/pods/Alamofire-Decodable)
