@@ -5,11 +5,29 @@
 [![License](https://img.shields.io/cocoapods/l/Alamofire-Decodable.svg?style=flat)](http://cocoapods.org/pods/Alamofire-Decodable)
 [![Platform](https://img.shields.io/cocoapods/p/Alamofire-Decodable.svg?style=flat)](http://cocoapods.org/pods/Alamofire-Decodable)
 
-## Example
+## Brief
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+A simple pod to connect `Decodable` to `Alamofire`.
 
-## Requirements
+Assuming you have a decodable struct called `Post` (check out Post.swift in the example project), then you can just use `responseDecodable` to return you one (or a list) of them, like this: 
+
+```swift
+Alamofire.request(.GET, "https://jsonplaceholder.typicode.com/posts/1").responseDecodable { (response: Response<Post, DecodableResponseError>) in
+
+    switch response.result {
+
+    case .Success(let post):
+        print("Recieved post: \(post)")
+
+    case .Failure(let error):
+        print("Failed with error: \(error)")
+    }
+}
+```
+
+## Example Project
+
+To run the example project, clone the repo and run the project in the Example folder.
 
 ## Installation
 

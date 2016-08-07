@@ -4,8 +4,6 @@ target 'Alamofire-Decodable_Example' do
   pod 'Alamofire-Decodable', :path => '../'
 
   target 'Alamofire-Decodable_Tests' do
-    inherit! :search_paths
-
-    
+    inherit! :search_paths    
   end
 end
