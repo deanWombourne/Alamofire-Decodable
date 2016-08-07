@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.summary          = 'A trivial method added to alamofire to automagically decode responses using Decodable'
   s.description      = <<-DESC
 
-This pod adds the `responseDecodable` method to Alamofire's Request object to return model objects instead of just json.'
+This pod adds the `responseDecodable` method to Alamofire's Request object to return model objects instead of just json.'. This pod basically just removes some boilerplate from your apps.
 
                        DESC
 
