@@ -1,0 +1,6 @@
+framework module Alamofire_Decodable {
+  umbrella header "Alamofire-Decodable-umbrella.h"
+
+  export *
+  module * { export * }
+}

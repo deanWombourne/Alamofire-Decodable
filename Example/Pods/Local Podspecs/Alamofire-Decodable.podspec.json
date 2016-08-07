@@ -1,0 +1,22 @@
+{
+  "name": "Alamofire-Decodable",
+  "version": "0.1.0",
+  "summary": "A short description of Alamofire-Decodable.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/Alamofire-Decodable",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Sam Dean": "deanWombourne@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/Alamofire-Decodable.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Alamofire-Decodable/Classes/**/*"
+}

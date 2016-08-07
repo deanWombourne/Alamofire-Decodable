@@ -1,0 +1,16 @@
+PODS:
+  - Alamofire-Decodable (0.1.0)
+
+DEPENDENCIES:
+  - Alamofire-Decodable (from `../`)
+
+EXTERNAL SOURCES:
+  Alamofire-Decodable:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire-Decodable: b11a65c59f1a76433814cf25c29550c31ffd72ea
+
+PODFILE CHECKSUM: '074408b3e4e711c6a30a0b3cd2fc822c8f9542eb'
+
+COCOAPODS: 1.0.1
