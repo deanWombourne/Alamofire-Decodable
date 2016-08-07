@@ -1,5 +1,9 @@
 PODS:
-  - Alamofire-Decodable (0.1.0)
+  - Alamofire (3.3.1)
+  - Alamofire-Decodable (0.1.0):
+    - Alamofire
+    - Decodable
+  - Decodable (0.4.2)
 
 DEPENDENCIES:
   - Alamofire-Decodable (from `../`)
@@ -9,7 +13,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Alamofire-Decodable: b11a65c59f1a76433814cf25c29550c31ffd72ea
+  Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
+  Alamofire-Decodable: 17866aebebb73e980ac9e9fe783b0565da7bbc37
+  Decodable: b1cd96ad9f722721bc98b0310952214a47f71d6a
 
 PODFILE CHECKSUM: '074408b3e4e711c6a30a0b3cd2fc822c8f9542eb'
 

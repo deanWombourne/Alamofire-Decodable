@@ -1,6 +1,6 @@
 import UIKit
 import XCTest
-import Alamofire-Decodable
+import Alamofire_Decodable
 
 class Tests: XCTestCase {
     
