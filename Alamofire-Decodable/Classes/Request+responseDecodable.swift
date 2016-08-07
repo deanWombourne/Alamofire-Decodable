@@ -19,6 +19,11 @@ public enum DecodableResponseError: ErrorType {
  */
 extension Request {
 
+    /**
+     Provide a `Response<T, DecodableResponseError>` where T is something `Decodable`.
+
+     - parameter completionHandler: This function is passed the `Response` after decoding is complete
+     */
     public func responseDecodable<T: Decodable>(completionHandler: Response<T, DecodableResponseError> -> Void) -> Self {
 
         let responseSerializer = ResponseSerializer<T, DecodableResponseError> { request, response, data, error in
@@ -45,7 +50,15 @@ extension Request {
         return response(responseSerializer: responseSerializer, completionHandler: completionHandler)
     }
 
-    public func responseDecodable<T: Decodable>(completionHandler: Response<[T], DecodableResponseError> -> Void) -> Self {
+    /**
+     Provide a `Response<[T], DecodableResponseError>` where T is something `Decodable`.
+     
+     If the response is not an array, then a `serialisation(TypeMismatchError)` is thrown
+     
+     - parameter partial: If this is true then individual items in the array which fail to be decoded into an instance of `T` are skipped. If false, then the entire response fails on the first invalid item.
+     - parameter completionHandler: This function is passed the `Response` after decoding is complete
+     */
+    public func responseDecodable<T: Decodable>(partial: Bool = true, completionHandler: Response<[T], DecodableResponseError> -> Void) -> Self {
 
         let responseSerializer = ResponseSerializer<[T], DecodableResponseError> { request, response, data, error in
             guard error == nil else {
@@ -66,9 +79,13 @@ extension Request {
                     let responseObject: [T] = try values.flatMap {
                         do {
                             return try T.decode($0)
-                        } catch {
-                            // Errors on individual objects aren't an issue
-                            return nil
+                        } catch let e {
+                            // If we are allowing partial responses, just let it slide
+                            if partial {
+                                return nil
+                            } else {
+                                throw e
+                            }
                         }
                     }
                     return .Success(responseObject)

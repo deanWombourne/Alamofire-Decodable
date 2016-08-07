@@ -45,6 +45,7 @@
 		87CF859A7DB7BF14A7420EBA /* Pods_Alamofire_Decodable_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alamofire_Decodable_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		880FA34D13F4DCA204899091 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A015CC2B1D57C77E003C638A /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		A015CC2D1D57C906003C638A /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
 		B825BEF783D696ECC71E296C /* Pods_Alamofire_Decodable_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alamofire_Decodable_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C953FFDBAB85512DDC01F8E2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		CE352EC0D351E9965AEF2CDC /* Alamofire-Decodable.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "Alamofire-Decodable.podspec"; path = "../Alamofire-Decodable.podspec"; sourceTree = "<group>"; };
@@ -147,6 +148,7 @@
 				CE352EC0D351E9965AEF2CDC /* Alamofire-Decodable.podspec */,
 				C953FFDBAB85512DDC01F8E2 /* README.md */,
 				880FA34D13F4DCA204899091 /* LICENSE */,
+				A015CC2D1D57C906003C638A /* CHANGELOG.md */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
