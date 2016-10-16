@@ -1,6 +1,6 @@
 {
   "name": "Alamofire-Decodable",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "summary": "A trivial method added to alamofire to automagically decode responses using Decodable",
   "description": "This pod adds the `responseDecodable` method to Alamofire's Request object to return model objects instead of just json.'. This pod basically just removes some boilerplate from your apps.",
   "homepage": "https://github.com/deanWombourne/Alamofire-Decodable",
@@ -13,19 +13,19 @@
   },
   "source": {
     "git": "https://github.com/deanWombourne/Alamofire-Decodable.git",
-    "tag": "v1.0.0"
+    "tag": "v1.0.1"
   },
   "social_media_url": "https://twitter.com/deanWombourne",
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
   "source_files": "Alamofire-Decodable/Classes/**/*",
   "dependencies": {
     "Alamofire": [
-      "~> 3.3"
+      "~> 4.0"
     ],
     "Decodable": [
-      "~> 0.4.2"
+      "~> 0.5.0"
     ]
   }
 }

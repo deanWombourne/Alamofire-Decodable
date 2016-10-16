@@ -10,8 +10,9 @@ import Alamofire
 private struct Model: Decodable {
     let id: Int
 
-    static func decode(json: AnyObject) throws -> Model {
+    static func decode(_ json: Any) throws -> Model {
         return try Model(id: json => "id")
+
     }
 }
 
@@ -20,19 +21,19 @@ class ResponseDecodableTests: XCTestCase {
     func testValidResponseShouldParse() {
         let valid = "{\"id\": 1}"
 
-        let ser: ResponseSerializer<Model, DecodableResponseError> = Request.makeResponseSerializer()
+        let ser: DataResponseSerializer<Model> = DataRequest.decodableResponseSerializer()
 
-        let request = NSURLRequest()
-        let response = NSHTTPURLResponse()
-        let data = valid.dataUsingEncoding(NSUTF8StringEncoding)
+        let request = URLRequest(url: URL(string: "www.example.com")!)
+        let response = HTTPURLResponse()
+        let data = valid.data(using: String.Encoding.utf8)
 
         let result = ser.serializeResponse(request, response, data, nil)
 
         switch result {
-        case .Failure:
+        case .failure:
             XCTFail("Should have been valid")
 
-        case .Success(let model):
+        case .success(let model):
             XCTAssertEqual(model.id, 1)
         }
     }
@@ -40,22 +41,22 @@ class ResponseDecodableTests: XCTestCase {
     func testInvalidJSONShouldNotParse() {
         let valid = "x{\"id\": 1}"
 
-        let ser: ResponseSerializer<Model, DecodableResponseError> = Request.makeResponseSerializer()
+        let ser: DataResponseSerializer<Model> = DataRequest.decodableResponseSerializer()
 
-        let request = NSURLRequest()
-        let response = NSHTTPURLResponse()
-        let data = valid.dataUsingEncoding(NSUTF8StringEncoding)
+        let request = URLRequest(url: URL(string: "www.example.com")!)
+        let response = HTTPURLResponse()
+        let data = valid.data(using: String.Encoding.utf8)
 
         let result = ser.serializeResponse(request, response, data, nil)
 
         switch result {
-        case .Failure(.decoding):
+        case .failure(DecodableResponseError.decoding):
             break
 
-        case .Failure(let error):
+        case .failure(let error):
             XCTFail("Unexpected error: \(error)")
 
-        case .Success:
+        case .success:
             XCTFail("Should not have been valid")
         }
     }
@@ -63,22 +64,22 @@ class ResponseDecodableTests: XCTestCase {
     func testValidButWrongJSONShouldNotParse() {
         let valid = "{\"id\": \"1\"}"
 
-        let ser: ResponseSerializer<Model, DecodableResponseError> = Request.makeResponseSerializer()
+        let ser: DataResponseSerializer<Model> = DataRequest.decodableResponseSerializer()
 
-        let request = NSURLRequest()
-        let response = NSHTTPURLResponse()
-        let data = valid.dataUsingEncoding(NSUTF8StringEncoding)
-
+        let request = URLRequest(url: URL(string: "www.example.com")!)
+        let response = HTTPURLResponse()
+        let data = valid.data(using: String.Encoding.utf8)
+        
         let result = ser.serializeResponse(request, response, data, nil)
 
         switch result {
-        case .Failure(.serialization):
+        case .failure(DecodableResponseError.serialization):
             break
 
-        case .Failure(let error):
+        case .failure(let error):
             XCTFail("Unexpected error: \(error)")
 
-        case .Success:
+        case .success:
             XCTFail("Should not have been valid")
         }
     }
@@ -86,23 +87,23 @@ class ResponseDecodableTests: XCTestCase {
     func testErrorIsPassedOn() {
         let valid = "{\"id\": 1}"
 
-        let ser: ResponseSerializer<Model, DecodableResponseError> = Request.makeResponseSerializer()
+        let ser: DataResponseSerializer<Model> = DataRequest.decodableResponseSerializer()
 
-        let request = NSURLRequest()
-        let response = NSHTTPURLResponse()
-        let data = valid.dataUsingEncoding(NSUTF8StringEncoding)
+        let request = URLRequest(url: URL(string: "www.example.com")!)
+        let response = HTTPURLResponse()
+        let data = valid.data(using: String.Encoding.utf8)
         let error = NSError(domain: "TestErrorDomain", code: 0, userInfo: nil)
 
         let result = ser.serializeResponse(request, response, data, error)
 
         switch result {
-        case .Failure(.network(let error)):
+        case .failure(DecodableResponseError.network(let error)):
             XCTAssertEqual((error as NSError).domain, "TestErrorDomain")
 
-        case .Failure(let error):
+        case .failure(let error):
             XCTFail("Unexpected error: \(error)")
 
-        case .Success:
+        case .success:
             XCTFail("Should not have been valid")
         }
     }
@@ -110,23 +111,23 @@ class ResponseDecodableTests: XCTestCase {
     func testValidArrayIsParsed() {
         let valid = "[ {\"id\": 1}, {\"id\": 2}, {\"id\": 3} ]"
 
-        let ser: ResponseSerializer<[Model], DecodableResponseError> = Request.makeResponseSerializer(partial: false)
+        let ser: DataResponseSerializer<[Model]> = DataRequest.decodableResponseSerializer(partial: false)
 
-        let request = NSURLRequest()
-        let response = NSHTTPURLResponse()
-        let data = valid.dataUsingEncoding(NSUTF8StringEncoding)
+        let request = URLRequest(url: URL(string: "www.example.com")!)
+        let response = HTTPURLResponse()
+        let data = valid.data(using: String.Encoding.utf8)
 
         let result = ser.serializeResponse(request, response, data, nil)
 
         switch result {
 
-        case .Success(let models):
+        case .success(let models):
             XCTAssertEqual(models.count, 3)
             XCTAssertEqual(models[0].id, 1)
             XCTAssertEqual(models[1].id, 2)
             XCTAssertEqual(models[2].id, 3)
 
-        case .Failure(let error):
+        case .failure(let error):
             XCTFail("Should have been valid. \(error)")
         }
     }
@@ -134,20 +135,20 @@ class ResponseDecodableTests: XCTestCase {
     func testInvalidItemStopsParseWhenPartialIsFalse() {
         let valid = "[ {\"id\": 1}, {\"id\": \"2\"}, {\"id\": 3} ]"
 
-        let ser: ResponseSerializer<[Model], DecodableResponseError> = Request.makeResponseSerializer(partial: false)
+        let ser: DataResponseSerializer<[Model]> = DataRequest.decodableResponseSerializer(partial: false)
 
-        let request = NSURLRequest()
-        let response = NSHTTPURLResponse()
-        let data = valid.dataUsingEncoding(NSUTF8StringEncoding)
+        let request = URLRequest(url: URL(string: "www.example.com")!)
+        let response = HTTPURLResponse()
+        let data = valid.data(using: String.Encoding.utf8)
 
         let result = ser.serializeResponse(request, response, data, nil)
 
         switch result {
 
-        case .Failure:
+        case .failure:
             break
 
-        case .Success:
+        case .success:
             XCTFail("Should not have been valid")
         }
     }
@@ -155,22 +156,22 @@ class ResponseDecodableTests: XCTestCase {
     func testInvalidItemIsSkippedParseWhenPartialIsTrue() {
         let valid = "[ {\"id\": 1}, {\"id\": \"2\"}, {\"id\": 3} ]"
 
-        let ser: ResponseSerializer<[Model], DecodableResponseError> = Request.makeResponseSerializer(partial: true)
+        let ser: DataResponseSerializer<[Model]> = DataRequest.decodableResponseSerializer(partial: true)
 
-        let request = NSURLRequest()
-        let response = NSHTTPURLResponse()
-        let data = valid.dataUsingEncoding(NSUTF8StringEncoding)
+        let request = URLRequest(url: URL(string: "www.example.com")!)
+        let response = HTTPURLResponse()
+        let data = valid.data(using: String.Encoding.utf8)
 
         let result = ser.serializeResponse(request, response, data, nil)
 
         switch result {
 
-        case .Success(let models):
+        case .success(let models):
             XCTAssertEqual(models.count, 2)
             XCTAssertEqual(models[0].id, 1)
             XCTAssertEqual(models[1].id, 3)
 
-        case .Failure:
+        case .failure:
             XCTFail("Should have been valid")
         }
     }

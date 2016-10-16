@@ -5,29 +5,30 @@ import Decodable
 /**
  Errors returned from decoding the response
  */
-public enum DecodableResponseError: ErrorType {
-    case network(error: ErrorType)
-    case serialization(error: ErrorType)
-    case decoding(error: ErrorType)
+public enum DecodableResponseError: Error {
+    case network(error: Error)
+    case serialization(error: Error)
+    case decoding(error: Error)
 }
 
 
 /**
- Add a responseDecodable method to Alamo fire's `Request` to return already decoded objects.
+ Add a responseDecodable method to Alamofire's `DataRequest` to return already decoded objects.
  
  Also add a method which does the same to arrays of decodable, because we can't yet define in Swift that
  an array of `Decodable` is also itself `Decodable`.
  */
-extension Request {
+extension DataRequest {
 
     /**
      Provide a `Response<T, DecodableResponseError>` where `T` is something `Decodable`.
 
      - parameter completionHandler: This function is passed the `Response` after decoding is complete
      */
-    public func responseDecodable<T: Decodable>(completionHandler: Response<T, DecodableResponseError> -> Void) -> Self {
+    @discardableResult
+    public func responseDecodable<T: Decodable>(completionHandler: @escaping (DataResponse<T>) -> Void) -> Self {
 
-        let responseSerializer: ResponseSerializer<T, DecodableResponseError> = Request.makeResponseSerializer()
+        let responseSerializer: DataResponseSerializer<T> = DataRequest.decodableResponseSerializer()
 
         return response(responseSerializer: responseSerializer, completionHandler: completionHandler)
     }
@@ -40,9 +41,10 @@ extension Request {
      - parameter partial: If this is true then individual items in the array which fail to be decoded into an instance of `T` are skipped. If false, then the entire response fails on the first invalid item.
      - parameter completionHandler: This function is passed the `Response` after decoding is complete
      */
-    public func responseDecodable<T: Decodable>(partial: Bool = true, completionHandler: Response<[T], DecodableResponseError> -> Void) -> Self {
+    @discardableResult
+    public func responseDecodable<T: Decodable>(partial: Bool = true, completionHandler: @escaping (DataResponse<[T]>) -> Void) -> Self {
 
-        let responseSerializer: ResponseSerializer<[T], DecodableResponseError> = Request.makeResponseSerializer(partial: partial)
+        let responseSerializer: DataResponseSerializer<[T]> = DataRequest.decodableResponseSerializer(partial: partial)
 
         return response(responseSerializer: responseSerializer, completionHandler: completionHandler)
     }
@@ -50,27 +52,30 @@ extension Request {
     /**
      Internal helper to make the response serializer for a `Decodable`
      */
-    static func makeResponseSerializer<T: Decodable>() -> ResponseSerializer<T, DecodableResponseError> {
-        return ResponseSerializer<T, DecodableResponseError> { request, response, data, error in
+    static func decodableResponseSerializer<T: Decodable>() -> DataResponseSerializer<T> {
+        return DataResponseSerializer<T> { request, response, data, error in
             guard error == nil else {
-                return .Failure(.network(error: error!))
+                return .failure(DecodableResponseError.network(error: error!))
             }
 
-            let JSONResponseSerializer = Request.JSONResponseSerializer(options: .AllowFragments)
-            let result = JSONResponseSerializer.serializeResponse(request, response, data, error)
+            // Use Alamofire's existing JSON serializer to extract the data, passing the error as nil, as it has already been handled.
+            let result = Request.serializeResponseJSON(options: .allowFragments,
+                                                       response:response,
+                                                       data:data,
+                                                       error:nil)
 
             switch result {
 
-            case .Success(let value):
+            case .success(let value):
                 do {
                     let responseObject = try T.decode(value)
-                    return .Success(responseObject)
+                    return .success(responseObject)
                 } catch let e {
-                    return .Failure(.serialization(error: e))
+                    return .failure(DecodableResponseError.serialization(error: e))
                 }
 
-            case .Failure(let error):
-                return .Failure(.decoding(error: error))
+            case .failure(let error):
+                return .failure(DecodableResponseError.decoding(error: error))
             }
         }
 
@@ -79,21 +84,25 @@ extension Request {
     /**
      Internal helper to make the response serializer for a collection of `Decodable`s
      */
-    static func makeResponseSerializer<T: Decodable>(partial partial: Bool) -> ResponseSerializer<[T], DecodableResponseError> {
-        return ResponseSerializer<[T], DecodableResponseError> { request, response, data, error in
+    static func decodableResponseSerializer<T: Decodable>(partial partial: Bool) -> DataResponseSerializer<[T]> {
+        return DataResponseSerializer<[T]> { request, response, data, error in
             guard error == nil else {
-                return .Failure(.network(error: error!))
+                return .failure(DecodableResponseError.network(error: error!))
             }
 
-            let JSONResponseSerializer = Request.JSONResponseSerializer(options: .AllowFragments)
-            let result = JSONResponseSerializer.serializeResponse(request, response, data, error)
+            // Use Alamofire's existing JSON serializer to extract the data, passing the error as nil, as it has already been handled.
+            let result = Request.serializeResponseJSON(options: .allowFragments,
+                                                       response:response,
+                                                       data:data,
+                                                       error:nil)
 
             switch result {
 
-            case .Success(let value):
+            case .success(let value):
                 guard let values = value as? Array<AnyObject> else {
-                    let error = TypeMismatchError(expectedType: Array<AnyObject>.self, receivedType: value.dynamicType, object: value)
-                    return .Failure(.serialization(error: error))
+                    let metadata = DecodingError.Metadata(object: value)
+                    let error = DecodingError.typeMismatch(expected: Array<AnyObject>.self, actual: type(of: value), metadata)
+                    return .failure(DecodableResponseError.serialization(error: error))
                 }
 
                 do {
@@ -109,13 +118,13 @@ extension Request {
                             }
                         }
                     }
-                    return .Success(responseObject)
+                    return .success(responseObject)
                 } catch let e {
-                    return .Failure(.serialization(error: e))
+                    return .failure(DecodableResponseError.serialization(error: e))
                 }
 
-            case .Failure(let error):
-                return .Failure(.decoding(error: error))
+            case .failure(let error):
+                return .failure(DecodableResponseError.decoding(error: error))
             }
         }
     }
