@@ -1,16 +1,21 @@
-\# references:
+# references:
 # * http://www.objc.io/issue-6/travis-ci.html
 # * https://github.com/supermarin/xcpretty#usage
 
 language: objective-c
-osx_image: xcode7.3
+osx_image: xcode8
+
+before_install:
+  - gem install cocoapods --pre --no-rdoc --no-ri --no-document --quiet
+  - pod repo update --silent
+  - pod --version
 
 env:
   - DESTINATION="platform=iOS Simulator,name=iPhone 6,OS=9.1"
-  - DESTINATION="platform=iOS Simulator,name=iPhone 6,OS=8.4"
+  - DESTINATION="platform=iOS Simulator,name=iPhone 6,OS=10.0"
   - DESTINATION="platform=iOS Simulator,name=iPad Air,OS=9.1"
-  - DESTINATION="platform=iOS Simulator,name=iPad Air,OS=8.4"
+  - DESTINATION="platform=iOS Simulator,name=iPad Air,OS=10.0"
 
 script:
-- set -o pipefail && xcodebuild test -destination=$DESTINATION -workspace Example/Alamofire-Decodable.xcworkspace -scheme Alamofire-Decodable-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
-- pod lib lint
+  - set -o pipefail && xcodebuild test -destination "$DESTINATION" -workspace Example/Alamofire-Decodable.xcworkspace -scheme Alamofire-Decodable-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
+  - pod lib lint

@@ -84,7 +84,7 @@ extension DataRequest {
     /**
      Internal helper to make the response serializer for a collection of `Decodable`s
      */
-    static func decodableResponseSerializer<T: Decodable>(partial partial: Bool) -> DataResponseSerializer<[T]> {
+    static func decodableResponseSerializer<T: Decodable>(partial: Bool) -> DataResponseSerializer<[T]> {
         return DataResponseSerializer<[T]> { request, response, data, error in
             guard error == nil else {
                 return .failure(DecodableResponseError.network(error: error!))
