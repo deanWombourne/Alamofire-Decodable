@@ -7,50 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		095406039B4D371E48D08B38A2975AC8 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34AC799FE7AA665D0CB2CED0E7073BF /* Error.swift */; };
-		09A288E1FC8BD4983A71E6E1483657A3 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA0962AEBB14A3D9CA5E57C3F32AD1 /* Operators.swift */; };
-		0B6033E183FC9654B88B6B8AA11B4A37 /* Decodable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E1D419072F87D27EC5ACB647B5D95908 /* Decodable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1506F2CD41811D91841C74DECAE1F54F /* Decodable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED7327A917D726CC812DD5076D847C4 /* Decodable-dummy.m */; };
-		16102E4E35FAA0FC4161282FECE56469 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C7D57BEA626A0889F905DD53131A4D /* Timeline.swift */; };
+		0B6033E183FC9654B88B6B8AA11B4A37 /* Decodable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A95DCAB805A8FD2096FA3FF41AEA4508 /* Decodable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C1B4E9FFB8B81E8833A3BAD537B1990 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB2CC2CF61A7772F3BBF6FAAF4347C5 /* Notifications.swift */; };
+		12118C354EFA36292F82A8D0CFCE45B2 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052E7F46719CC7EE45920BEC76AC79D0 /* Request.swift */; };
 		1A156054A9C31FA1225B84043FC470FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B73B84E0394178166C0900C19A049745 /* Foundation.framework */; };
-		1F4508590228F2D104BA483A66EC046B /* RawRepresentableDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113620F20C967D8B4E2CC1478E70AE4A /* RawRepresentableDecodable.swift */; };
+		1EB14AB3EFB5642159993383F5725CA8 /* Parse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418073A6155F47D14A541D44768A40A3 /* Parse.swift */; };
+		1EC2EE7E066391B527D3955A3227AD6A /* Decodable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D40E0491580C480F12CED055789C6056 /* Decodable-dummy.m */; };
 		26907E2A58D64A0516F817A88C410278 /* Pods-Alamofire-Decodable_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E27F265439FE2541BD204A1F303CA836 /* Pods-Alamofire-Decodable_Tests-dummy.m */; };
+		298317FA77C92A7A0CFF8B6BDF5633F7 /* Decoders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8617C8F63B2411197DBBD17BB960F732 /* Decoders.swift */; };
+		2C73404F52DD258C626B845EB66AB512 /* OptionalKeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA316E0E561681CD064F7A083D50661 /* OptionalKeyPath.swift */; };
 		2C937F4BC05A7706F84C3D3B5B9AAE83 /* Pods-Alamofire-Decodable_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A00922EF8BEE6B5C9673031284083D65 /* Pods-Alamofire-Decodable_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2D3405986FC586FA6C0A5E0B6BA7E64E /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC01C32F3245A6F52C6E0C4DCCC82D0 /* Validation.swift */; };
 		33A5863E7C5C3A681764495BB2DCB5B1 /* Pods-Alamofire-Decodable_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 292F6571C4D743861176C3FFE17E926B /* Pods-Alamofire-Decodable_Example-dummy.m */; };
-		34CCDCA848A701466256BC2927DA8856 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CCB1FD3C55D3A1C9ECA2B40D1C79E6 /* NetworkReachabilityManager.swift */; };
-		3EA8F215C9C1432D74E5CCA4834AA8C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262A484DEFD1ACA09234D3BAEF4F112D /* ResponseSerialization.swift */; };
-		4053B9F808705A8C941E528E6844604A /* Overloads.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA10B3A488138F203235D17CDE313D8 /* Overloads.swift */; };
-		4081EA628AF0B73AC51FFB9D7AB3B89E /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D430846A77EE3D57B9A3AC7D67FCCC /* Manager.swift */; };
+		3982B850C43B41BA6D25F440F0412E9B /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4745CE5C423338977531242CC45617AA /* Timeline.swift */; };
+		443E1801864EAB8187000DADCFE8A15B /* RawRepresentableDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FF9C622414EE6D18B772D1BA0E0D15 /* RawRepresentableDecodable.swift */; };
+		463C9C2B2CCB4C06567CD26D57A6A5F6 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E5ED1F6C60A6B61B4BCD2BB0B35C6C /* Operators.swift */; };
+		49FC51E0BA86E05F4CAF10642CCFEED1 /* Overloads.swift in Sources */ = {isa = PBXBuildFile; fileRef = C189E499420FE4C844305AF82E0BA9B6 /* Overloads.swift */; };
 		58B07284476897FBC510B280559BB854 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B73B84E0394178166C0900C19A049745 /* Foundation.framework */; };
 		593D6D577ECA0DBD93ABEB8039EA108E /* Decodable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCB466125B5F545F70A934ACC88FF039 /* Decodable.framework */; };
 		5A6D23C9B524614C721D2A686648ABBC /* Alamofire-Decodable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D74A6D7AD2A8BE06C2B8AEEC5F9B75A0 /* Alamofire-Decodable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5BC19E6E0F199276003F0AF96838BCE5 /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C62711ED3FE7297914FB1DAB612423 /* Upload.swift */; };
-		5CB05FBCB32D21E194B5ECF680CB6AE0 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168B4263976E482029E02A98EDC26D54 /* Download.swift */; };
-		5CD730BFDF4CC5F26F2DF4CA02E5C07B /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11553A166806C3BB881801D3E95AE678 /* Decodable.swift */; };
-		62E8346F03C03E7F4D631361F325689E /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F8350A056A2851B5FC6922308F22DA /* Response.swift */; };
-		7B48852C4D848FA2DA416A98F6425869 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0238275FFCD093C89A905B517E7F3D /* ServerTrustPolicy.swift */; };
+		62143065F94E53F437DCE5D7A998D66D /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8278381A31D9475B28D254911C17B928 /* AFError.swift */; };
+		7CA5A9BA5246FDA8227233E310029392 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6FB093B42055752BEBD45EE46378BF /* Alamofire.swift */; };
+		86ED08F33B7D357932A9AB743E9D9EA7 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A736F371E8AB284787301C8CC744A6 /* Response.swift */; };
 		8A8B1070E39007A0141BCD3ED0BD2530 /* Request+responseDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8E8AFC6E3327B8B166A2E266239EB5 /* Request+responseDecodable.swift */; };
-		8EB11202167FCDDF1257AAAB1D1FB244 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C225BC727B9CC23454E4F11A9BCF2C /* Alamofire.swift */; };
-		906E1B600249469AC352660F28C868D3 /* Decodable.h in Headers */ = {isa = PBXBuildFile; fileRef = AD3470A356D66092FD3D03D1776F7B3E /* Decodable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D463A0A4C65C02FDD5211F0F3C6F8B8 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B9132FA1640E52BE6609B81338C3619C /* Alamofire-dummy.m */; };
+		906CAAE884C92137AD05FC6DCD54942A /* DecodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E39BF2974B02795B55B87D1E75B4AD /* DecodingError.swift */; };
+		906E1B600249469AC352660F28C868D3 /* Decodable.h in Headers */ = {isa = PBXBuildFile; fileRef = E0881F7F46AC26EB5D63F81238B3A9DF /* Decodable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		907AB123FBC8BC9340D5B7350CE828DF /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1370D34B5DFF08230C7B4DC5121CEABE /* SessionDelegate.swift */; };
 		91C09AC2A52ED69A27C8D923139A006F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B73B84E0394178166C0900C19A049745 /* Foundation.framework */; };
-		9469DF81ECB494E84675969B5E13374C /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2027DDA5609FCE67FC136CE0CABED5F3 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9AEC4907893643B8626C9CE0014810D2 /* Parse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB61E7563EB93C6A86BA4D6AD6AE0A67 /* Parse.swift */; };
+		9255F374163250578797AB2AE12CD162 /* KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241D3A3C2AC64573C4C616F86F13C69 /* KeyPath.swift */; };
+		9469DF81ECB494E84675969B5E13374C /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 18E68A443BED5B5F757744F2F9C4D63E /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9B8CD49C6E28397C33015760267CAD5E /* Pods-Alamofire-Decodable_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B224A05B3D62B269D3EC5A3B0DB836C1 /* Pods-Alamofire-Decodable_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AA314156AC500125F4078EE968DB14C6 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = C074B49EDAC52FC09C8286630E4B507F /* Result.swift */; };
+		A79AC30123B0C2177D67F6ED6A1B3215 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473B9B451CEDF24A4FDA5D01A105AB9A /* SessionManager.swift */; };
 		AA9423C11428777E65982B39E8548B47 /* Alamofire-Decodable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC86F97F3983F2FC2D416C02C72C218F /* Alamofire-Decodable-dummy.m */; };
-		ADF19C953CE2A7D0B72EC93A81FCCC26 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E57C1FB7986EB60D328D9C592E5496E2 /* Alamofire-dummy.m */; };
-		AE4CF87C02C042DF13ED5B21C4FDC1E0 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC7A596423A9C718BE483B294F797A /* Stream.swift */; };
-		BE41196F6A3903E59C3306FE3F8B43FE /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02409BE13BC461B9FD5DEFC3E668D23 /* Notifications.swift */; };
-		C0DB70AB368765DC64BFB5FEA75E0696 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B61DB4CF0DA2AFA4C35E238450F48CA /* ParameterEncoding.swift */; };
-		C7B6DD7C0456C50289A2C381DFE9FA3F /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1273D108FC46820156B678F3A94F817 /* MultipartFormData.swift */; };
+		AF158CAAF4DD319009AFC855DC995D90 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA9453F604A6BFD388319F322EC0E30 /* ParameterEncoding.swift */; };
+		B8154C96802336E5DDA5CEE97C3180A0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8068B8211130B38579157F1747A82CA6 /* ResponseSerialization.swift */; };
+		C048725AA0855F7C25F52FFE90505B93 /* Castable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDC54211B56F9A6C525E4E376842609 /* Castable.swift */; };
+		C0AEA97E7684DDAD56998C0AE198A433 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11852F3BA14A934C5DB8C0ED9D8694E8 /* ServerTrustPolicy.swift */; };
+		C7A3408350643ADE1018826C766EE356 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46310219D882E0490F993295AA58A56 /* MultipartFormData.swift */; };
 		CBE9481A6228053037E006908F52DEB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B73B84E0394178166C0900C19A049745 /* Foundation.framework */; };
-		E224E0781C491159875DE2F914E94E20 /* NSValueCastable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2B6079C65D18504159F4B1ED6B28FD /* NSValueCastable.swift */; };
+		DF1BBF94997A2F4248B42B25EA919EC2 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893254C3808B630D6097C4B2940E595C /* Result.swift */; };
+		DF42A3A9BE56A6A253EBD48EA1D0BF0A /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA0306CDA0CA6CAF4FA644BFCB790E /* Decodable.swift */; };
+		E1F583CB4A68A928CD197250AA752926 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFE81039D11443294DCD357F5E2C70F /* TaskDelegate.swift */; };
+		E2A1C34237B4E928E5F85C097F4C2551 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9602BB8FBA07CF01F6FC2EA30FD868E /* DispatchQueue+Alamofire.swift */; };
+		E59BF19C0AFA68B741552319FC478C7B /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EEEDD82A37152837DDEBF604A22362 /* NetworkReachabilityManager.swift */; };
 		ECCF15FED089F4837784C9C95FD7BD8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B73B84E0394178166C0900C19A049745 /* Foundation.framework */; };
-		EFE92E8D3813DD26E78E93EEAF6D7E7E /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68EB33FDA2EF7ACDECC410288E54CA6 /* Request.swift */; };
-		F0D089D2571AA7007CC4D9EEB9D2FBE6 /* DecodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561C16F93750B2947FB2362590678F76 /* DecodingError.swift */; };
 		F348B761693FA27065180295978C2441 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5809FF2864DBEC58FC037BC809807C4D /* Alamofire.framework */; };
-		F8715409FA4EED0E99ECE99DA50DA252 /* Castable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A87FCF0114BD68C8291CAA6D809E1F7 /* Castable.swift */; };
+		FEC89225E796FAE71BF08B226F9FBFE9 /* NSValueCastable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AFF85810B4B91F7BAD9AFFE316E5 /* NSValueCastable.swift */; };
+		FFFDD494EE6D1B83DDAF5F2721F685A6 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF017CB2EE0088062DC29A79BE05EE4 /* Validation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,80 +95,83 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04AA0962AEBB14A3D9CA5E57C3F32AD1 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/Operators.swift; sourceTree = "<group>"; };
+		00CDF07899C9DBBAA9F1A8F2AE18BC1C /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		052E7F46719CC7EE45920BEC76AC79D0 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		08A3514476782445D5EFDF56B364D908 /* Pods-Alamofire-Decodable_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Alamofire-Decodable_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		094979FB03EA10F71D34BF2D871178F5 /* Pods-Alamofire-Decodable_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Alamofire-Decodable_Tests.modulemap"; sourceTree = "<group>"; };
-		0983E0ED30E0511B3F396B2374CF7C8F /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
-		0AFC7A596423A9C718BE483B294F797A /* Stream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stream.swift; path = Source/Stream.swift; sourceTree = "<group>"; };
-		113620F20C967D8B4E2CC1478E70AE4A /* RawRepresentableDecodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RawRepresentableDecodable.swift; path = Sources/RawRepresentableDecodable.swift; sourceTree = "<group>"; };
-		11553A166806C3BB881801D3E95AE678 /* Decodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decodable.swift; path = Sources/Decodable.swift; sourceTree = "<group>"; };
-		168B4263976E482029E02A98EDC26D54 /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
-		1B61DB4CF0DA2AFA4C35E238450F48CA /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
-		1FE3F2A7EEAE34940348CE054C41C5A0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2027DDA5609FCE67FC136CE0CABED5F3 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		262A484DEFD1ACA09234D3BAEF4F112D /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		0BF017CB2EE0088062DC29A79BE05EE4 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		0BFE81039D11443294DCD357F5E2C70F /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		11852F3BA14A934C5DB8C0ED9D8694E8 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		1370D34B5DFF08230C7B4DC5121CEABE /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		18E68A443BED5B5F757744F2F9C4D63E /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		28E153BE0FADD87265F81B6709B8D877 /* Alamofire_Decodable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire_Decodable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		292F6571C4D743861176C3FFE17E926B /* Pods-Alamofire-Decodable_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Alamofire-Decodable_Example-dummy.m"; sourceTree = "<group>"; };
-		2C68F83703A76820E4317EC0204BCCB7 /* Decodable.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Decodable.xcconfig; sourceTree = "<group>"; };
+		2B91E3F8B87F1C903CF786E9E139E5E8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C0E26B7988F6DF7C854A71115657456 /* Decodable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Decodable.modulemap; sourceTree = "<group>"; };
 		39CE41E7C5C21198D692C73CB7C53735 /* Pods-Alamofire-Decodable_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Alamofire-Decodable_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		3A87FCF0114BD68C8291CAA6D809E1F7 /* Castable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Castable.swift; path = Sources/Castable.swift; sourceTree = "<group>"; };
-		3EC01C32F3245A6F52C6E0C4DCCC82D0 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		3ED7327A917D726CC812DD5076D847C4 /* Decodable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Decodable-dummy.m"; sourceTree = "<group>"; };
-		40F8350A056A2851B5FC6922308F22DA /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		39E39BF2974B02795B55B87D1E75B4AD /* DecodingError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DecodingError.swift; path = Sources/DecodingError.swift; sourceTree = "<group>"; };
+		418073A6155F47D14A541D44768A40A3 /* Parse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parse.swift; path = Sources/Parse.swift; sourceTree = "<group>"; };
+		473B9B451CEDF24A4FDA5D01A105AB9A /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		4745CE5C423338977531242CC45617AA /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
 		4C7C45409443C41503DBB08902144091 /* Alamofire-Decodable.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Alamofire-Decodable.xcconfig"; sourceTree = "<group>"; };
 		4D8E8AFC6E3327B8B166A2E266239EB5 /* Request+responseDecodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Request+responseDecodable.swift"; sourceTree = "<group>"; };
 		5139853438C599194EE36310469BF8F7 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51563456A020B8068B1B0F04577CC305 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		561C16F93750B2947FB2362590678F76 /* DecodingError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DecodingError.swift; path = Sources/DecodingError.swift; sourceTree = "<group>"; };
 		5809FF2864DBEC58FC037BC809807C4D /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A6FB093B42055752BEBD45EE46378BF /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		62E973690E92334DAB049730314185BD /* Pods_Alamofire_Decodable_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alamofire_Decodable_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64B7135F4617F3E4BC86D0C85359AE28 /* Pods-Alamofire-Decodable_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Alamofire-Decodable_Example-frameworks.sh"; sourceTree = "<group>"; };
-		67D430846A77EE3D57B9A3AC7D67FCCC /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
+		64E5AFF85810B4B91F7BAD9AFFE316E5 /* NSValueCastable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSValueCastable.swift; path = Sources/NSValueCastable.swift; sourceTree = "<group>"; };
+		70656296159CE745971BFEAA8B1153DA /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		765B11AB1DB8F25DAC771C188BB60C51 /* Pods-Alamofire-Decodable_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Alamofire-Decodable_Example.release.xcconfig"; sourceTree = "<group>"; };
 		768F9E3E329A49DC9705C083E7EB5E19 /* Pods-Alamofire-Decodable_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Alamofire-Decodable_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		830C02F3F3528A8FE8848814AB2010D6 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		8068B8211130B38579157F1747A82CA6 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		8241D3A3C2AC64573C4C616F86F13C69 /* KeyPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyPath.swift; path = Sources/KeyPath.swift; sourceTree = "<group>"; };
+		8278381A31D9475B28D254911C17B928 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
 		8480480ABB1AE9AAC75DBF67EC84BB24 /* Pods-Alamofire-Decodable_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Alamofire-Decodable_Example.modulemap"; sourceTree = "<group>"; };
+		8617C8F63B2411197DBBD17BB960F732 /* Decoders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decoders.swift; path = Sources/Decoders.swift; sourceTree = "<group>"; };
+		893254C3808B630D6097C4B2940E595C /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93C225BC727B9CC23454E4F11A9BCF2C /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		95FB36799C282C6CD798D324567FD3BA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BA3679FAC2A7707FF95D5704BB1B088 /* Decodable.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Decodable.xcconfig; sourceTree = "<group>"; };
+		9F661E94912E5BD4A2B311FF7758A191 /* Decodable-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Decodable-prefix.pch"; sourceTree = "<group>"; };
 		A00922EF8BEE6B5C9673031284083D65 /* Pods-Alamofire-Decodable_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Alamofire-Decodable_Tests-umbrella.h"; sourceTree = "<group>"; };
-		A17BEBFABCD4804276FFEA12C357DF08 /* Decodable-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Decodable-prefix.pch"; sourceTree = "<group>"; };
-		AB61E7563EB93C6A86BA4D6AD6AE0A67 /* Parse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parse.swift; path = Sources/Parse.swift; sourceTree = "<group>"; };
+		A46310219D882E0490F993295AA58A56 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		A95DCAB805A8FD2096FA3FF41AEA4508 /* Decodable-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Decodable-umbrella.h"; sourceTree = "<group>"; };
 		AC533767F60C62A3D315D18FED8F4993 /* Pods-Alamofire-Decodable_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Alamofire-Decodable_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		AD3470A356D66092FD3D03D1776F7B3E /* Decodable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Decodable.h; path = Sources/Decodable.h; sourceTree = "<group>"; };
 		B0CA879FFC2B17A5B81831D7BC9CC9E5 /* Pods-Alamofire-Decodable_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Alamofire-Decodable_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		B224A05B3D62B269D3EC5A3B0DB836C1 /* Pods-Alamofire-Decodable_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Alamofire-Decodable_Example-umbrella.h"; sourceTree = "<group>"; };
+		B2A736F371E8AB284787301C8CC744A6 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
 		B59A950971ECB471982805F674EADAE3 /* Pods_Alamofire_Decodable_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alamofire_Decodable_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B68EB33FDA2EF7ACDECC410288E54CA6 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		B73B84E0394178166C0900C19A049745 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B9132FA1640E52BE6609B81338C3619C /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		B9602BB8FBA07CF01F6FC2EA30FD868E /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		BA187103CB9B46BD29A4FAE4614CE54D /* Alamofire-Decodable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Alamofire-Decodable.modulemap"; sourceTree = "<group>"; };
+		BB6554CDE21540C46208ADD11FFB3FCD /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		BC86F97F3983F2FC2D416C02C72C218F /* Alamofire-Decodable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-Decodable-dummy.m"; sourceTree = "<group>"; };
-		BF2B6079C65D18504159F4B1ED6B28FD /* NSValueCastable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSValueCastable.swift; path = Sources/NSValueCastable.swift; sourceTree = "<group>"; };
-		C074B49EDAC52FC09C8286630E4B507F /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		C0C62711ED3FE7297914FB1DAB612423 /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
-		C1273D108FC46820156B678F3A94F817 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		C2CCB1FD3C55D3A1C9ECA2B40D1C79E6 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		C59F0E6FF66B5DD94285BDBAE8F9A13B /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		BCA9453F604A6BFD388319F322EC0E30 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		C189E499420FE4C844305AF82E0BA9B6 /* Overloads.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Overloads.swift; path = Sources/Overloads.swift; sourceTree = "<group>"; };
+		CBDC54211B56F9A6C525E4E376842609 /* Castable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Castable.swift; path = Sources/Castable.swift; sourceTree = "<group>"; };
 		CCB466125B5F545F70A934ACC88FF039 /* Decodable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Decodable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CDA10B3A488138F203235D17CDE313D8 /* Overloads.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Overloads.swift; path = Sources/Overloads.swift; sourceTree = "<group>"; };
+		CDB2CC2CF61A7772F3BBF6FAAF4347C5 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
 		CEA15F6C9C61FE67ED98C3CCC2B4E337 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D6C7D57BEA626A0889F905DD53131A4D /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		D40E0491580C480F12CED055789C6056 /* Decodable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Decodable-dummy.m"; sourceTree = "<group>"; };
+		D6EEEDD82A37152837DDEBF604A22362 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		D6EFDDCDD4C99284D610CE294C648E63 /* Pods-Alamofire-Decodable_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Alamofire-Decodable_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D74A6D7AD2A8BE06C2B8AEEC5F9B75A0 /* Alamofire-Decodable-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-Decodable-umbrella.h"; sourceTree = "<group>"; };
+		D8E5ED1F6C60A6B61B4BCD2BB0B35C6C /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/Operators.swift; sourceTree = "<group>"; };
 		DBF870920BB331A0E28A96E140AFFC0B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E02409BE13BC461B9FD5DEFC3E668D23 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		DDA316E0E561681CD064F7A083D50661 /* OptionalKeyPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OptionalKeyPath.swift; path = Sources/OptionalKeyPath.swift; sourceTree = "<group>"; };
+		E0881F7F46AC26EB5D63F81238B3A9DF /* Decodable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Decodable.h; path = Sources/Decodable.h; sourceTree = "<group>"; };
 		E1C6CAA7DFA91A2F929630D44684A106 /* Pods-Alamofire-Decodable_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Alamofire-Decodable_Tests-resources.sh"; sourceTree = "<group>"; };
-		E1D419072F87D27EC5ACB647B5D95908 /* Decodable-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Decodable-umbrella.h"; sourceTree = "<group>"; };
 		E27F265439FE2541BD204A1F303CA836 /* Pods-Alamofire-Decodable_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Alamofire-Decodable_Tests-dummy.m"; sourceTree = "<group>"; };
-		E34AC799FE7AA665D0CB2CED0E7073BF /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Source/Error.swift; sourceTree = "<group>"; };
 		E4784D7C34A437B8232E9B20E4EF73A3 /* Pods-Alamofire-Decodable_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Alamofire-Decodable_Example-resources.sh"; sourceTree = "<group>"; };
-		E57C1FB7986EB60D328D9C592E5496E2 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 		E730D375DB227BA7A8A1766CAE096A43 /* Alamofire-Decodable-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-Decodable-prefix.pch"; sourceTree = "<group>"; };
 		EFEE0AE9422E3BDF930B7BD39E53E50B /* Pods-Alamofire-Decodable_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Alamofire-Decodable_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F007B06535AC3FD5B19C461FCBE96334 /* Pods-Alamofire-Decodable_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Alamofire-Decodable_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		F19B73E67250741DF62712A9644AF5BE /* Decodable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Decodable.modulemap; sourceTree = "<group>"; };
-		F3FA95EA73EF526C17E729AA409B2E62 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7FF9C622414EE6D18B772D1BA0E0D15 /* RawRepresentableDecodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RawRepresentableDecodable.swift; path = Sources/RawRepresentableDecodable.swift; sourceTree = "<group>"; };
 		F89A952280A7F07249A42AD7B6786845 /* Decodable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Decodable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD0238275FFCD093C89A905B517E7F3D /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		FAEA0306CDA0CA6CAF4FA644BFCB790E /* Decodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decodable.swift; path = Sources/Decodable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,13 +220,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0D999C07DE2A76C5558C11A5696DF861 /* Pods */ = {
+		1CE302AF50B589E184A2524F2C54C10E /* Alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				E5340DB1F950E1499988C18CCA7A17B3 /* Alamofire */,
-				7A56FF8BE4327CACE29D150836F68866 /* Decodable */,
+				8278381A31D9475B28D254911C17B928 /* AFError.swift */,
+				5A6FB093B42055752BEBD45EE46378BF /* Alamofire.swift */,
+				B9602BB8FBA07CF01F6FC2EA30FD868E /* DispatchQueue+Alamofire.swift */,
+				A46310219D882E0490F993295AA58A56 /* MultipartFormData.swift */,
+				D6EEEDD82A37152837DDEBF604A22362 /* NetworkReachabilityManager.swift */,
+				CDB2CC2CF61A7772F3BBF6FAAF4347C5 /* Notifications.swift */,
+				BCA9453F604A6BFD388319F322EC0E30 /* ParameterEncoding.swift */,
+				052E7F46719CC7EE45920BEC76AC79D0 /* Request.swift */,
+				B2A736F371E8AB284787301C8CC744A6 /* Response.swift */,
+				8068B8211130B38579157F1747A82CA6 /* ResponseSerialization.swift */,
+				893254C3808B630D6097C4B2940E595C /* Result.swift */,
+				11852F3BA14A934C5DB8C0ED9D8694E8 /* ServerTrustPolicy.swift */,
+				1370D34B5DFF08230C7B4DC5121CEABE /* SessionDelegate.swift */,
+				473B9B451CEDF24A4FDA5D01A105AB9A /* SessionManager.swift */,
+				0BFE81039D11443294DCD357F5E2C70F /* TaskDelegate.swift */,
+				4745CE5C423338977531242CC45617AA /* Timeline.swift */,
+				0BF017CB2EE0088062DC29A79BE05EE4 /* Validation.swift */,
+				E583AF7F44C09AB20BEAAACACB8CFD77 /* Support Files */,
 			);
-			name = Pods;
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		1E387E2479464CBB8E8CF50937CDCB22 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C0E26B7988F6DF7C854A71115657456 /* Decodable.modulemap */,
+				9BA3679FAC2A7707FF95D5704BB1B088 /* Decodable.xcconfig */,
+				D40E0491580C480F12CED055789C6056 /* Decodable-dummy.m */,
+				9F661E94912E5BD4A2B311FF7758A191 /* Decodable-prefix.pch */,
+				A95DCAB805A8FD2096FA3FF41AEA4508 /* Decodable-umbrella.h */,
+				2B91E3F8B87F1C903CF786E9E139E5E8 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Decodable";
 			sourceTree = "<group>";
 		};
 		25885254E7CFFB831DE6DE9A74C239B0 /* Pods-Alamofire-Decodable_Tests */ = {
@@ -267,23 +303,6 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		7A56FF8BE4327CACE29D150836F68866 /* Decodable */ = {
-			isa = PBXGroup;
-			children = (
-				3A87FCF0114BD68C8291CAA6D809E1F7 /* Castable.swift */,
-				AD3470A356D66092FD3D03D1776F7B3E /* Decodable.h */,
-				11553A166806C3BB881801D3E95AE678 /* Decodable.swift */,
-				561C16F93750B2947FB2362590678F76 /* DecodingError.swift */,
-				BF2B6079C65D18504159F4B1ED6B28FD /* NSValueCastable.swift */,
-				04AA0962AEBB14A3D9CA5E57C3F32AD1 /* Operators.swift */,
-				CDA10B3A488138F203235D17CDE313D8 /* Overloads.swift */,
-				AB61E7563EB93C6A86BA4D6AD6AE0A67 /* Parse.swift */,
-				113620F20C967D8B4E2CC1478E70AE4A /* RawRepresentableDecodable.swift */,
-				D96D815C7A01C9A110FB91CED2FEC58C /* Support Files */,
-			);
-			path = Decodable;
-			sourceTree = "<group>";
-		};
 		7C85F744D9564CABE47464867BD9F992 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -299,7 +318,7 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				5688AD8BEA09AE92B872A1E38750CB4D /* Development Pods */,
 				93D6635D3E0AE020C82C1233C446D7A8 /* Frameworks */,
-				0D999C07DE2A76C5558C11A5696DF861 /* Pods */,
+				DEC355D412386B368BAB2BC39101B831 /* Pods */,
 				AD64FDAAF5E616800D0597D79EB2D7CE /* Products */,
 				7C85F744D9564CABE47464867BD9F992 /* Targets Support Files */,
 			);
@@ -321,20 +340,6 @@
 			);
 			name = "Pods-Alamofire-Decodable_Example";
 			path = "Target Support Files/Pods-Alamofire-Decodable_Example";
-			sourceTree = "<group>";
-		};
-		884AAEE98B9932F746BF0DBCE5DCE1BC /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0983E0ED30E0511B3F396B2374CF7C8F /* Alamofire.modulemap */,
-				830C02F3F3528A8FE8848814AB2010D6 /* Alamofire.xcconfig */,
-				E57C1FB7986EB60D328D9C592E5496E2 /* Alamofire-dummy.m */,
-				C59F0E6FF66B5DD94285BDBAE8F9A13B /* Alamofire-prefix.pch */,
-				2027DDA5609FCE67FC136CE0CABED5F3 /* Alamofire-umbrella.h */,
-				F3FA95EA73EF526C17E729AA409B2E62 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Alamofire";
 			sourceTree = "<group>";
 		};
 		93D6635D3E0AE020C82C1233C446D7A8 /* Frameworks */ = {
@@ -381,43 +386,47 @@
 			path = "Example/Pods/Target Support Files/Alamofire-Decodable";
 			sourceTree = "<group>";
 		};
-		D96D815C7A01C9A110FB91CED2FEC58C /* Support Files */ = {
+		CD7A4384F95DBD6A9325F1947B8FA2FD /* Decodable */ = {
 			isa = PBXGroup;
 			children = (
-				F19B73E67250741DF62712A9644AF5BE /* Decodable.modulemap */,
-				2C68F83703A76820E4317EC0204BCCB7 /* Decodable.xcconfig */,
-				3ED7327A917D726CC812DD5076D847C4 /* Decodable-dummy.m */,
-				A17BEBFABCD4804276FFEA12C357DF08 /* Decodable-prefix.pch */,
-				E1D419072F87D27EC5ACB647B5D95908 /* Decodable-umbrella.h */,
-				1FE3F2A7EEAE34940348CE054C41C5A0 /* Info.plist */,
+				CBDC54211B56F9A6C525E4E376842609 /* Castable.swift */,
+				E0881F7F46AC26EB5D63F81238B3A9DF /* Decodable.h */,
+				FAEA0306CDA0CA6CAF4FA644BFCB790E /* Decodable.swift */,
+				8617C8F63B2411197DBBD17BB960F732 /* Decoders.swift */,
+				39E39BF2974B02795B55B87D1E75B4AD /* DecodingError.swift */,
+				8241D3A3C2AC64573C4C616F86F13C69 /* KeyPath.swift */,
+				64E5AFF85810B4B91F7BAD9AFFE316E5 /* NSValueCastable.swift */,
+				D8E5ED1F6C60A6B61B4BCD2BB0B35C6C /* Operators.swift */,
+				DDA316E0E561681CD064F7A083D50661 /* OptionalKeyPath.swift */,
+				C189E499420FE4C844305AF82E0BA9B6 /* Overloads.swift */,
+				418073A6155F47D14A541D44768A40A3 /* Parse.swift */,
+				F7FF9C622414EE6D18B772D1BA0E0D15 /* RawRepresentableDecodable.swift */,
+				1E387E2479464CBB8E8CF50937CDCB22 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Decodable";
+			path = Decodable;
 			sourceTree = "<group>";
 		};
-		E5340DB1F950E1499988C18CCA7A17B3 /* Alamofire */ = {
+		DEC355D412386B368BAB2BC39101B831 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				93C225BC727B9CC23454E4F11A9BCF2C /* Alamofire.swift */,
-				168B4263976E482029E02A98EDC26D54 /* Download.swift */,
-				E34AC799FE7AA665D0CB2CED0E7073BF /* Error.swift */,
-				67D430846A77EE3D57B9A3AC7D67FCCC /* Manager.swift */,
-				C1273D108FC46820156B678F3A94F817 /* MultipartFormData.swift */,
-				C2CCB1FD3C55D3A1C9ECA2B40D1C79E6 /* NetworkReachabilityManager.swift */,
-				E02409BE13BC461B9FD5DEFC3E668D23 /* Notifications.swift */,
-				1B61DB4CF0DA2AFA4C35E238450F48CA /* ParameterEncoding.swift */,
-				B68EB33FDA2EF7ACDECC410288E54CA6 /* Request.swift */,
-				40F8350A056A2851B5FC6922308F22DA /* Response.swift */,
-				262A484DEFD1ACA09234D3BAEF4F112D /* ResponseSerialization.swift */,
-				C074B49EDAC52FC09C8286630E4B507F /* Result.swift */,
-				FD0238275FFCD093C89A905B517E7F3D /* ServerTrustPolicy.swift */,
-				0AFC7A596423A9C718BE483B294F797A /* Stream.swift */,
-				D6C7D57BEA626A0889F905DD53131A4D /* Timeline.swift */,
-				C0C62711ED3FE7297914FB1DAB612423 /* Upload.swift */,
-				3EC01C32F3245A6F52C6E0C4DCCC82D0 /* Validation.swift */,
-				884AAEE98B9932F746BF0DBCE5DCE1BC /* Support Files */,
+				1CE302AF50B589E184A2524F2C54C10E /* Alamofire */,
+				CD7A4384F95DBD6A9325F1947B8FA2FD /* Decodable */,
 			);
-			path = Alamofire;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E583AF7F44C09AB20BEAAACACB8CFD77 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				70656296159CE745971BFEAA8B1153DA /* Alamofire.modulemap */,
+				00CDF07899C9DBBAA9F1A8F2AE18BC1C /* Alamofire.xcconfig */,
+				B9132FA1640E52BE6609B81338C3619C /* Alamofire-dummy.m */,
+				BB6554CDE21540C46208ADD11FFB3FCD /* Alamofire-prefix.pch */,
+				18E68A443BED5B5F757744F2F9C4D63E /* Alamofire-umbrella.h */,
+				95FB36799C282C6CD798D324567FD3BA /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
 			sourceTree = "<group>";
 		};
 		F96A869D38495052694EF57932AD7282 /* Alamofire-Decodable */ = {
@@ -516,7 +525,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3CFB42910790CF0BDBCCEBAACD6B9367 /* Build configuration list for PBXNativeTarget "Alamofire" */;
 			buildPhases = (
-				95CC2C7E06DC188A05DAAEE9CAA555A3 /* Sources */,
+				120C4E824DDCCA024C170A491FF221A5 /* Sources */,
 				B1729F851F648EC60EE93CDB3C8BAEAD /* Frameworks */,
 				EFDF3B631BBB965A372347705CA14854 /* Headers */,
 			);
@@ -533,7 +542,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A18F1E08FEC3AE2FCF9E57C58F93E3D6 /* Build configuration list for PBXNativeTarget "Decodable" */;
 			buildPhases = (
-				DDE5BCD1C2828DFCD1756FD5FD947068 /* Sources */,
+				B45A7079481834EC78D57F2494BB4129 /* Sources */,
 				97E359186A9780303A33692B86B7479A /* Frameworks */,
 				4D6372C6292DEE581ABCAD7C1709E8C0 /* Headers */,
 			);
@@ -596,28 +605,47 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		95CC2C7E06DC188A05DAAEE9CAA555A3 /* Sources */ = {
+		120C4E824DDCCA024C170A491FF221A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADF19C953CE2A7D0B72EC93A81FCCC26 /* Alamofire-dummy.m in Sources */,
-				8EB11202167FCDDF1257AAAB1D1FB244 /* Alamofire.swift in Sources */,
-				5CB05FBCB32D21E194B5ECF680CB6AE0 /* Download.swift in Sources */,
-				095406039B4D371E48D08B38A2975AC8 /* Error.swift in Sources */,
-				4081EA628AF0B73AC51FFB9D7AB3B89E /* Manager.swift in Sources */,
-				C7B6DD7C0456C50289A2C381DFE9FA3F /* MultipartFormData.swift in Sources */,
-				34CCDCA848A701466256BC2927DA8856 /* NetworkReachabilityManager.swift in Sources */,
-				BE41196F6A3903E59C3306FE3F8B43FE /* Notifications.swift in Sources */,
-				C0DB70AB368765DC64BFB5FEA75E0696 /* ParameterEncoding.swift in Sources */,
-				EFE92E8D3813DD26E78E93EEAF6D7E7E /* Request.swift in Sources */,
-				62E8346F03C03E7F4D631361F325689E /* Response.swift in Sources */,
-				3EA8F215C9C1432D74E5CCA4834AA8C0 /* ResponseSerialization.swift in Sources */,
-				AA314156AC500125F4078EE968DB14C6 /* Result.swift in Sources */,
-				7B48852C4D848FA2DA416A98F6425869 /* ServerTrustPolicy.swift in Sources */,
-				AE4CF87C02C042DF13ED5B21C4FDC1E0 /* Stream.swift in Sources */,
-				16102E4E35FAA0FC4161282FECE56469 /* Timeline.swift in Sources */,
-				5BC19E6E0F199276003F0AF96838BCE5 /* Upload.swift in Sources */,
-				2D3405986FC586FA6C0A5E0B6BA7E64E /* Validation.swift in Sources */,
+				62143065F94E53F437DCE5D7A998D66D /* AFError.swift in Sources */,
+				8D463A0A4C65C02FDD5211F0F3C6F8B8 /* Alamofire-dummy.m in Sources */,
+				7CA5A9BA5246FDA8227233E310029392 /* Alamofire.swift in Sources */,
+				E2A1C34237B4E928E5F85C097F4C2551 /* DispatchQueue+Alamofire.swift in Sources */,
+				C7A3408350643ADE1018826C766EE356 /* MultipartFormData.swift in Sources */,
+				E59BF19C0AFA68B741552319FC478C7B /* NetworkReachabilityManager.swift in Sources */,
+				0C1B4E9FFB8B81E8833A3BAD537B1990 /* Notifications.swift in Sources */,
+				AF158CAAF4DD319009AFC855DC995D90 /* ParameterEncoding.swift in Sources */,
+				12118C354EFA36292F82A8D0CFCE45B2 /* Request.swift in Sources */,
+				86ED08F33B7D357932A9AB743E9D9EA7 /* Response.swift in Sources */,
+				B8154C96802336E5DDA5CEE97C3180A0 /* ResponseSerialization.swift in Sources */,
+				DF1BBF94997A2F4248B42B25EA919EC2 /* Result.swift in Sources */,
+				C0AEA97E7684DDAD56998C0AE198A433 /* ServerTrustPolicy.swift in Sources */,
+				907AB123FBC8BC9340D5B7350CE828DF /* SessionDelegate.swift in Sources */,
+				A79AC30123B0C2177D67F6ED6A1B3215 /* SessionManager.swift in Sources */,
+				E1F583CB4A68A928CD197250AA752926 /* TaskDelegate.swift in Sources */,
+				3982B850C43B41BA6D25F440F0412E9B /* Timeline.swift in Sources */,
+				FFFDD494EE6D1B83DDAF5F2721F685A6 /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B45A7079481834EC78D57F2494BB4129 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C048725AA0855F7C25F52FFE90505B93 /* Castable.swift in Sources */,
+				1EC2EE7E066391B527D3955A3227AD6A /* Decodable-dummy.m in Sources */,
+				DF42A3A9BE56A6A253EBD48EA1D0BF0A /* Decodable.swift in Sources */,
+				298317FA77C92A7A0CFF8B6BDF5633F7 /* Decoders.swift in Sources */,
+				906CAAE884C92137AD05FC6DCD54942A /* DecodingError.swift in Sources */,
+				9255F374163250578797AB2AE12CD162 /* KeyPath.swift in Sources */,
+				FEC89225E796FAE71BF08B226F9FBFE9 /* NSValueCastable.swift in Sources */,
+				463C9C2B2CCB4C06567CD26D57A6A5F6 /* Operators.swift in Sources */,
+				2C73404F52DD258C626B845EB66AB512 /* OptionalKeyPath.swift in Sources */,
+				49FC51E0BA86E05F4CAF10642CCFEED1 /* Overloads.swift in Sources */,
+				1EB14AB3EFB5642159993383F5725CA8 /* Parse.swift in Sources */,
+				443E1801864EAB8187000DADCFE8A15B /* RawRepresentableDecodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,22 +671,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				33A5863E7C5C3A681764495BB2DCB5B1 /* Pods-Alamofire-Decodable_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DDE5BCD1C2828DFCD1756FD5FD947068 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F8715409FA4EED0E99ECE99DA50DA252 /* Castable.swift in Sources */,
-				1506F2CD41811D91841C74DECAE1F54F /* Decodable-dummy.m in Sources */,
-				5CD730BFDF4CC5F26F2DF4CA02E5C07B /* Decodable.swift in Sources */,
-				F0D089D2571AA7007CC4D9EEB9D2FBE6 /* DecodingError.swift in Sources */,
-				E224E0781C491159875DE2F914E94E20 /* NSValueCastable.swift in Sources */,
-				09A288E1FC8BD4983A71E6E1483657A3 /* Operators.swift in Sources */,
-				4053B9F808705A8C941E528E6844604A /* Overloads.swift in Sources */,
-				9AEC4907893643B8626C9CE0014810D2 /* Parse.swift in Sources */,
-				1F4508590228F2D104BA483A66EC046B /* RawRepresentableDecodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -698,11 +710,13 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		08C1B99E80FEB7276D3DFEE0581EFA76 /* Release */ = {
+		22E4F6A64AB476609E14EC4AA3F6E84F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C7C45409443C41503DBB08902144091 /* Alamofire-Decodable.xcconfig */;
+			baseConfigurationReference = 9BA3679FAC2A7707FF95D5704BB1B088 /* Decodable.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
@@ -711,65 +725,30 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire-Decodable/Alamofire-Decodable-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire-Decodable/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Decodable/Decodable-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Decodable/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Alamofire-Decodable/Alamofire-Decodable.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Decodable/Decodable.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Alamofire_Decodable;
+				PRODUCT_NAME = Decodable;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		2B6BD7DEA25C5F6CAA41E9C53366B4C1 /* Release */ = {
+		3C84CE985D7BE22BA672CCFA2E7643B6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 39CE41E7C5C21198D692C73CB7C53735 /* Pods-Alamofire-Decodable_Tests.release.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
@@ -780,7 +759,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-Alamofire-Decodable_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Alamofire-Decodable_Tests/Pods-Alamofire-Decodable_Tests.modulemap";
@@ -798,40 +777,13 @@
 			};
 			name = Release;
 		};
-		32AD5F8918CA8B349E4671410FA624C9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 830C02F3F3528A8FE8848814AB2010D6 /* Alamofire.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Alamofire;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		545084D5DE19E7511390B467D97137DD /* Debug */ = {
+		4D4B8450A2E6AF8A44F5AB705DFE69E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4C7C45409443C41503DBB08902144091 /* Alamofire-Decodable.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -843,7 +795,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Alamofire-Decodable/Alamofire-Decodable-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Alamofire-Decodable/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Alamofire-Decodable/Alamofire-Decodable.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -851,202 +803,14 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		75218111E718FACE36F771E8ABECDB62 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 830C02F3F3528A8FE8848814AB2010D6 /* Alamofire.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Alamofire;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8698D9266C8730C4E055A5C58CB68B97 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 765B11AB1DB8F25DAC771C188BB60C51 /* Pods-Alamofire-Decodable_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Alamofire-Decodable_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Alamofire-Decodable_Example/Pods-Alamofire-Decodable_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Alamofire_Decodable_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		92AA8D4BAE5A5EA14700056836D869B9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 08A3514476782445D5EFDF56B364D908 /* Pods-Alamofire-Decodable_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Alamofire-Decodable_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Alamofire-Decodable_Example/Pods-Alamofire-Decodable_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Alamofire_Decodable_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		9B3A6051618182E90476B0745AEE133A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C68F83703A76820E4317EC0204BCCB7 /* Decodable.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Decodable/Decodable-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Decodable/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Decodable/Decodable.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Decodable;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		BED28907A783DCB0021915B3B5C478FF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C68F83703A76820E4317EC0204BCCB7 /* Decodable.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Decodable/Decodable-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Decodable/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Decodable/Decodable.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Decodable;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		BFB8BF8C5F10A6123C59B1A4AF2BEE0E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D6EFDDCDD4C99284D610CE294C648E63 /* Pods-Alamofire-Decodable_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Alamofire-Decodable_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Alamofire-Decodable_Tests/Pods-Alamofire-Decodable_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Alamofire_Decodable_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
+		59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1064,6 +828,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1081,12 +846,289 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
+		};
+		5D3A3DFBD9F5D1227A46F0AE402500C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08A3514476782445D5EFDF56B364D908 /* Pods-Alamofire-Decodable_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Alamofire-Decodable_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Alamofire-Decodable_Example/Pods-Alamofire-Decodable_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Alamofire_Decodable_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6B2E2C00D5DF4E637D7719E2A8F3F17F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C7C45409443C41503DBB08902144091 /* Alamofire-Decodable.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire-Decodable/Alamofire-Decodable-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire-Decodable/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire-Decodable/Alamofire-Decodable.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire_Decodable;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7F93EF234CD87F7448472375CC1EFA96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00CDF07899C9DBBAA9F1A8F2AE18BC1C /* Alamofire.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		99EEF464E91DF9442FF6FCDCB302CB5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BA3679FAC2A7707FF95D5704BB1B088 /* Decodable.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Decodable/Decodable-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Decodable/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Decodable/Decodable.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Decodable;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A1124E99670B35462E66B071BDCF1812 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6EFDDCDD4C99284D610CE294C648E63 /* Pods-Alamofire-Decodable_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Alamofire-Decodable_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Alamofire-Decodable_Tests/Pods-Alamofire-Decodable_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Alamofire_Decodable_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A8D40D6621A295476567DDB401121110 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 765B11AB1DB8F25DAC771C188BB60C51 /* Pods-Alamofire-Decodable_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Alamofire-Decodable_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Alamofire-Decodable_Example/Pods-Alamofire-Decodable_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Alamofire_Decodable_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B7324857C38B065FEB1EEE3105C2367A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDA5A606A0B7062DEA5E47CD9FA65A3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00CDF07899C9DBBAA9F1A8F2AE18BC1C /* Alamofire.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -1094,8 +1136,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */,
-				0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */,
+				59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */,
+				B7324857C38B065FEB1EEE3105C2367A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1103,8 +1145,8 @@
 		3CFB42910790CF0BDBCCEBAACD6B9367 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				75218111E718FACE36F771E8ABECDB62 /* Debug */,
-				32AD5F8918CA8B349E4671410FA624C9 /* Release */,
+				7F93EF234CD87F7448472375CC1EFA96 /* Debug */,
+				DDA5A606A0B7062DEA5E47CD9FA65A3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1112,8 +1154,8 @@
 		78B81E6E76CF01DBA67DF42595136977 /* Build configuration list for PBXNativeTarget "Pods-Alamofire-Decodable_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				92AA8D4BAE5A5EA14700056836D869B9 /* Debug */,
-				8698D9266C8730C4E055A5C58CB68B97 /* Release */,
+				5D3A3DFBD9F5D1227A46F0AE402500C0 /* Debug */,
+				A8D40D6621A295476567DDB401121110 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1121,8 +1163,8 @@
 		87C19C912B0AC232A7C2EC0239B5DE2F /* Build configuration list for PBXNativeTarget "Pods-Alamofire-Decodable_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BFB8BF8C5F10A6123C59B1A4AF2BEE0E /* Debug */,
-				2B6BD7DEA25C5F6CAA41E9C53366B4C1 /* Release */,
+				A1124E99670B35462E66B071BDCF1812 /* Debug */,
+				3C84CE985D7BE22BA672CCFA2E7643B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1130,8 +1172,8 @@
 		A18F1E08FEC3AE2FCF9E57C58F93E3D6 /* Build configuration list for PBXNativeTarget "Decodable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9B3A6051618182E90476B0745AEE133A /* Debug */,
-				BED28907A783DCB0021915B3B5C478FF /* Release */,
+				99EEF464E91DF9442FF6FCDCB302CB5F /* Debug */,
+				22E4F6A64AB476609E14EC4AA3F6E84F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1139,8 +1181,8 @@
 		C6EE3332DE632E013E3F751131D968BB /* Build configuration list for PBXNativeTarget "Alamofire-Decodable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				545084D5DE19E7511390B467D97137DD /* Debug */,
-				08C1B99E80FEB7276D3DFEE0581EFA76 /* Release */,
+				4D4B8450A2E6AF8A44F5AB705DFE69E1 /* Debug */,
+				6B2E2C00D5DF4E637D7719E2A8F3F17F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

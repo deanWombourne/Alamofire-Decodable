@@ -22,11 +22,11 @@ This pod adds the `responseDecodable` method to Alamofire's Request object to re
   s.source           = { :git => 'https://github.com/deanWombourne/Alamofire-Decodable.git', :tag => 'v' + s.version.to_s }
   s.social_media_url = 'https://twitter.com/deanWombourne'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'Alamofire-Decodable/Classes/**/*'
   
-  s.dependency 'Alamofire', '~> 3.3'
-  s.dependency 'Decodable', '~> 0.4.2'
+  s.dependency 'Alamofire', '~> 4.0'
+  s.dependency 'Decodable', '~> 0.5.0'
 
 end

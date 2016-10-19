@@ -20,8 +20,8 @@ struct Post {
 
 
 extension Post: Decodable {
-
-    static func decode(json: AnyObject) throws -> Post {
+    
+    static func decode(_ json: Any) throws -> Post {
         return try Post(userId: json => "userId",
                         id: json => "id",
                         title: json => "title",

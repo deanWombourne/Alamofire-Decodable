@@ -9,21 +9,22 @@
 
 A simple pod to connect `Decodable` to `Alamofire`.
 
-Assuming you have a decodable struct called `Post` (check out Post.swift in the example project), then you can just use `responseDecodable` to return you one (or a list) of them, like this: 
+Assuming you have a decodable struct called `Post` (check out Post.swift in the example project), then you can just use `responseDecodable` to return you one (or a list) of them, like this:
 
 ```swift
-Alamofire.request(.GET, "https://jsonplaceholder.typicode.com/posts/1").responseDecodable { (response: Response<Post, DecodableResponseError>) in
-
+Alamofire.request("https://jsonplaceholder.typicode.com/posts/1").responseDecodable { (response: DataResponse<Post>) in
     switch response.result {
-
-    case .Success(let post):
+    case .success(let post):
         print("Recieved post: \(post)")
 
-    case .Failure(let error):
+    case .failure(let error):
         print("Failed with error: \(error)")
     }
 }
 ```
+
+## Requirements
+Alamofire-Decodable requires iOS 9.0, Swift 3 and Xcode 8.
 
 ## Example Project
 
