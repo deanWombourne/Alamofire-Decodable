@@ -1,4 +1,5 @@
 import Alamofire
+import protocol Decodable.Decodable
 import Decodable
 
 
