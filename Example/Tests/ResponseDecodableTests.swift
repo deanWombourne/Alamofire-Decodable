@@ -2,6 +2,7 @@ import Foundation
 import UIKit
 import XCTest
 
+import protocol Decodable.Decodable
 import Decodable
 import Alamofire
 
