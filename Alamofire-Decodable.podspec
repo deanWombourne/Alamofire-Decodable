@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Alamofire-Decodable'
-  s.version          = '2.0.0'
+  s.version          = '2.0.1'
   s.summary          = 'A trivial method added to alamofire to automagically decode responses using Decodable'
   s.description      = <<-DESC
 

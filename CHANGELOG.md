@@ -1,5 +1,8 @@
 ### Unreleased
 
+# 2.0.1
+- Support for compiling in xcode9 (ambiguous Decodable protocol) - thanks @kerrmarin
+
 # 2.0.0
 - Migrate to Swift 3
 - Update Alamofire to version 4.0
