@@ -27,6 +27,6 @@ This pod adds the `responseDecodable` method to Alamofire's Request object to re
   s.source_files = 'Alamofire-Decodable/Classes/**/*'
   
   s.dependency 'Alamofire', '~> 4.0'
-  s.dependency 'Decodable', '~> 0.5.0'
+  s.dependency 'Decodable', '~> 0.6.0'
 
 end
