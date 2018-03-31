@@ -1,5 +1,8 @@
 ### Unreleased
 
+# 3.0.0
+- Support for Swift 4 (thanks @kerrmarin)
+
 # 2.0.1
 - Support for compiling in xcode9 (ambiguous Decodable protocol) - thanks @kerrmarin
 

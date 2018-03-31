@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Alamofire-Decodable'
-  s.version          = '2.0.1'
+  s.version          = '3.0.0'
   s.summary          = 'A trivial method added to alamofire to automagically decode responses using Decodable'
   s.description      = <<-DESC
 
@@ -25,7 +25,7 @@ This pod adds the `responseDecodable` method to Alamofire's Request object to re
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'Alamofire-Decodable/Classes/**/*'
-  
+
   s.dependency 'Alamofire', '~> 4.0'
   s.dependency 'Decodable', '~> 0.6.0'
 
